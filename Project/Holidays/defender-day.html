@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер с Swiper</title>
+    <!-- Подключаем БИБЛИОТЕКУ Swiper, НЕ ТРОГАТЬ -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="button.css">
+    <style>
+        /* STYLE */
+        .swiper-container {
+            width: 100%;
+            height: 60vh; /* Уменьшаем высоту слайдера */
+            overflow: hidden; /* Скрываем части изображений, выходящие за пределы */
+            position: relative; /* Для корректного позиционирования стрелок */
+        }
+
+        .swiper-slide img {
+            width: 100%; /* Ширина изображения по ширине контейнера */
+            height: 100%; /* Высота изображения по высоте контейнера */
+            object-fit: cover;
+        }
+
+        /* Стрелки навигации */
+        .swiper-button-next, .swiper-button-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(151, 151, 151, 0.441); /*Цвет стрелок*/
+            font-size: 30px;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0); /*Фон для стрелок*/
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
+
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        h1{
+            font-size: 50px;
+            justify-self: center;
+        }
+
+        .font {
+        
+            font-family: monospace;
+        }
+
+        h2 {
+            justify-self: center;
+        }
+
+        p {
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+        
+    </style>
+</head>
+<body>
+        <a href="../index.html" class="return-button">← Вернуться на главную страницу</a>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper"> <!--СДЕСЬ МОЖНО ДОБАВИТЬ КАРТИНКИ-->
+            <div class="swiper-slide"> 
+                <img src="Photos and Videos/a0880483b31e18a1.jpeg" alt="Слайд 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="Photos and Videos/Astana.png" alt="Слайд 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="Photos and Videos/winter1.jpg" alt="Слайд 3">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <h1 class="font">Новый год</h1>
+    <h2 class="font" style="justify-self: center;">Главы</h2>
+    <ul>
+        <li class="font" style="justify-self: center;"><a href="#target1">Новый год в Казахстане: традиции и празднования</a></li>
+        <li class="font" style="justify-self: center;"><a href="#target2">Традиции и особенности празднования</a></li>
+        <li class="font" style="justify-self: center;"><a href="#target3">Елка и украшения</a></li>
+        <li class="font" style="justify-self: center;"><a href="#target4">Подарки и поздравления</a></li>
+        <li class="font" style="justify-self: center;"><a href="#target5">Массовые мероприятия и развлекательные программы</a></li>
+    </ul>
+
+    <h2 id="target1" class="font">Новый год в Казахстане: традиции и празднования</h2>
+    
+    <p class="font">Новый год — это одно из самых ожидаемых и любимых праздников в Казахстане, который объединяет людей разных культур и национальностей. Он является не только временем для веселья и семейных встреч, но и символом надежды, обновления и новых начинаний.</p>
+    
+    <h2 id="target2" class="font">Традиции и особенности празднования</h2>
+    
+    <p class="font">В Казахстане Новый год встречают с особым размахом, ведь это не только начало нового календарного года, но и время для долгожданных встреч с близкими, весёлых застолий и традиционных обычаев. Празднование начинается вечером 31 декабря и продолжается в первые дни января.</p>
+    
+    <h2 id="target3" class="font">Елка и украшения</h2>
+    
+    <p class="font">Как и во многих странах, в Казахстане важной частью новогоднего праздника является установка ёлки. В больших городах, таких как Алматы, Нур-Султан (Астана), Караганда, ёлки украшаются в центре города, а также во многих домах. Улицы и площади наполняются яркими огоньками, создавая атмосферу праздника и волшебства.</p>
+    
+    <h2 id="target4" class="font">Подарки и поздравления</h2>
+    
+    <p class="font">Семьи и друзья обмениваются подарками, а также поздравляют друг друга с наступающим годом. Подарки часто символизируют удачу, счастье и процветание, а в некоторых семьях принято дарить подарки, символизирующие элементы казахской культуры, например, изделия ручной работы, сувениры, украшения.</p>
+    
+    <h2 id="target5" class="font">Массовые мероприятия и развлекательные программы</h2>
+
+    <p class="font">В крупных городах Казахстана проводятся различные массовые мероприятия, концерты и шоу-программы. Ночью устраиваются праздничные фейерверки, а в некоторых регионах организуют народные гулянья и катания на санях, что особенно нравится детям. В Нур-Султане и Алматы проходят ярмарки, концерты с участием известных артистов, театрализованные представления, а также новогодние программы для детей.</p>
+
+    <!--!!!JAVASCRIPT!!!-->
+
+    <!--Подключаем Swipe-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true, //Зацикливаем слайдер
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000, //смена слайдов каждые 3 секунды
+            },
+            effect: 'slide', //плавный переход между слайдами
+        });
+    </script>
+
+</body>
+</html>

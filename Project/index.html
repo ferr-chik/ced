@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calendar/style.css">
+    <link rel="stylesheet" href="Quiz/style.css">
+</head>
+<body>
+    <div class="img-container">
+        <div class="fixed-img"></div>
+            <div class="content-overlay">
+                <h1 class="hText font">Праздники в Казахстане</h1>
+            </div>
+    </div>
+    
+    <div style="padding: 40px; display: flex;">
+        <div style="width: 50%;">
+            <h2 class="font">Описание сайта:</h2>
+            <p class="font">Мини-сайт, посвящённый традиционным казахским праздникам, создан с целью рассказать о важнейших культурных событиях Казахстана и познакомить пользователей с богатым культурным наследием народа. На сайте представлены такие праздники, как Наурыз, День независимости, а также другие значимые даты, которые играют важную роль в жизни казахстанцев.</p>
+        </div>
+
+        <div style="width: 50%;">
+            <h2 class="font" >Описание проекта:</h2>
+            <p class="font">Проект включает создание сайта, который будет содержать подробную информацию о традиционных казахских праздниках, календарь мероприятий, а также страницы для каждого праздника с описанием его традиций, обычаев и истории. Сайт будет дополнен мультимедийными элементами — фотографиями и видео, что поможет пользователям погрузиться в атмосферу каждого праздника и лучше понять его значение. Также на сайте предусмотрена интерактивная викторина, позволяющая пользователям проверить свои знания о казахских праздниках и традициях, делая процесс обучения увлекательным и познавательным.</p>
+        </div>
+    </div>
+    <div>
+        <h1 class="font" style="font-size: 32px; margin: 20px; justify-self: center;">Выберите Дату чтобы лучше узнать о празднике</h1>
+        
+        <div class="calendar-container" style="justify-self: center;">
+            <div class="calendar-header">
+                <button id="prevMonth" onclick="changeMonth(-1)">←</button>
+                <h2 id="monthYear"></h2>
+                <button id="nextMonth" onclick="changeMonth(1)">→</button>
+            </div>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th>Вс</th>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                        <th>Сб</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+        </div>
+        <script src="calendar/Interaction.js"></script>
+    </div>
+    <h1 class="font" style="font-size: 32px; margin: 20px; justify-self: center;">Хотите проверить свои знания о национальных праздников?</h1>
+    
+    <div id="quiz-container" style="justify-self: center">
+        <h1>Викторина по казахстанским праздникам</h1>
+        <div id="question-container">
+            <p id="question">Какой праздник казахстанцы отмечают 1 января?</p>
+            <div id="answers">
+              
+            </div>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()" disabled>Следующий вопрос</button>
+        <div id="result"></div>
+    </div>
+    <script src="Quiz/script.js"></script>
+</body>
+</html>

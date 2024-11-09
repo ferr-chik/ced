@@ -1,0 +1,48 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Половина ширины контейнера */
+    height: 100%; /* Полная высота контейнера */
+    background-color: rgba(0, 0, 0, 0); /* Полупрозрачный черный фон */
+    display: flex;
+    align-items: center; /* Центровка текста по вертикали */
+    justify-content: center; /* Центровка текста по горизонтали */
+}
+
+.hText {
+        color: rgb(197, 176, 53);
+        font-size: 40px;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        margin: 0;
+}
+
+.fixed-img {
+        position: relative;
+        width: 100%;
+        height: 50vh; /* Высота экрана */
+        background-image: url('Holidays/Photos\ and\ Videos/Astana.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Закрепление фона */
+}
+
+.font {
+    font-family: monospace;
+}

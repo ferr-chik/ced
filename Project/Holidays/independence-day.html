@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер с Swiper</title>
+    <!-- Подключаем БИБЛИОТЕКУ Swiper, НЕ ТРОГАТЬ -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="button.css">
+    <style>
+        /* STYLE */
+        .swiper-container {
+            width: 100%;
+            height: 60vh; /* Уменьшаем высоту слайдера */
+            overflow: hidden; /* Скрываем части изображений, выходящие за пределы */
+            position: relative; /* Для корректного позиционирования стрелок */
+        }
+
+        .swiper-slide img {
+            width: 100%; /* Ширина изображения по ширине контейнера */
+            height: 100%; /* Высота изображения по высоте контейнера */
+            object-fit: cover;
+        }
+
+        /* Стрелки навигации */
+        .swiper-button-next, .swiper-button-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(151, 151, 151, 0.441); /*Цвет стрелок*/
+            font-size: 30px;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0); /*Фон для стрелок*/
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
+
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        h1{
+            font-size: 50px;
+            justify-self: center;
+        }
+
+        .font {
+        
+            font-family: monospace;
+        }
+
+        h2 {
+            justify-self: center;
+        }
+
+        p {
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+        
+    </style>
+</head>
+<body>
+        <a href="../index.html" class="return-button">← Вернуться на главную страницу</a>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper"> <!--СДЕСЬ МОЖНО ДОБАВИТЬ КАРТИНКИ-->
+            <div class="swiper-slide"> 
+                <img src="Photos and Videos/Monument_of_Independence,_Republic_Square,_Almaty.JPG" alt="Слайд 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="Photos and Videos/m2.jpg" alt="Слайд 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="Photos and Videos/m3.jpg" alt="Слайд 3">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <h1 class="font">Новый год</h1>
+    <h2 class="font" style="justify-self: center;">Главы</h2>
+    <ul>
+        <li class="font" style="justify-self: center;"><a href="#target1">День Независимости Казахстана: традиции и празднования</a></li>
+        <li class="font" style="justify-self: center;"><a href="#target2">Традиции и особенности празднования</a></li>
+        <li class="font" style="justify-self: center;"><a href="#target3">История</a></li>
+        <li class="font" style="justify-self: center;"><a href="#target4">Чтобы узнать подробнее:</a></li>
+    </ul>
+
+    <h2 id="target1" class="font"> День Независимости Казахстана: традиции и празднования</h2>
+    
+    <p class="font"> День Независимости Казахстана (каз. Тәуелсіздік күні) — государственный праздник Республики Казахстан, отмечается в Казахстане ежегодно 16 декабря. 
+    </p>
+    
+    <h2 id="target2" class="font">Традиции и особенности празднования</h2>
+    
+    <p class="font">Главный национальный праздник Республики Казахстан, отмечается в Казахстане ежегодно 16—17 декабря. Этот день является выходным, при попадании на выходные дни переносится на ближайший рабочий день.
+        В преддверии Дня Независимости Казахстана в столице проходят социальные благотворительные мероприятия под девизом "10 добрых дел". Главная цель – сделать доброе дело для города и его жителей. В честь Дня Независимости в Астане пройдут различные праздничные и официальные мероприятия, в том числе выставки, концерты, конкурсы рисунков, турниры и спартакиады.</p>
+    
+        <h2 id="target3" class="font">История</h2>
+    
+        <p class="font">16 декабря 1991 года Постановлением Верховного Совета Республики Казахстан № 1008-XII был принят конституционный закон «О государственной Независимости Республики Казахстан».
+
+            В преамбуле Закона сказано: «Верховный Совет Республики Казахстан, выражая волю народа Казахстана, признавая приоритет прав и свобод личности, закрепленных во Всеобщей декларации прав человека, иных общепризнанных нормах международного права, подтверждая право казахской нации на самоопределение, исходя из решимости создания гражданского общества и правового государства, осуществляя миролюбивую внешнюю политику, заявляя о своей приверженности принципу нераспространения ядерного оружия и процессу разоружения, торжественно провозглашает государственную Независимость Республики Казахстан».
+            
+            В соответствии с Законом «Республика Казахстан — независимое, демократическое и правовое государство. Она обладает всей полнотой власти на своей территории, самостоятельно определяет и проводит внутреннюю и внешнюю Политику». Статья 1. «Республика Казахстан строит свои взаимоотношения со всеми государствами на принципах международного права».
+            
+            29 сентября 2022 года Президент Казахстана Касым-Жомарт Токаев подписал Закон Республики Казахстан «О внесении изменений и дополнений в некоторые законодательные акты Республики Казахстан по вопросам кинематографии, культуры и праздников», согласно которому День Независимости — 16 декабря установлен государственным праздником. 
+            
+    
+            За время, прошедшее с момента принятия действующей Конституции, изменения и дополнения в неё вносились пять раз: в 1998, 2007, 2011, 2017, 2019 годах.</p>
+        
+        <h2 id="target4" class="font">Чтобы узнать подробнее: <a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B0">Wikipedia 
+        </a></h2>
+    <!--!!!JAVASCRIPT!!!-->
+
+    <!--Подключаем Swipe-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true, //Зацикливаем слайдер
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000, //смена слайдов каждые 3 секунды
+            },
+            effect: 'slide', //плавный переход между слайдами
+        });
+    </script>
+
+</body>
+</html>
